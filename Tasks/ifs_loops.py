@@ -38,7 +38,7 @@ while op not in ['*', '/', '+', '-', '%']:
     if op not in ["*", "/", "+", "-", "%"]:
         print("Operation provided isn't valid, please,try again.")
 result = n1 + n2 if op == '+' else n1 - n2 if op == '-' else n1 * n2 if op == '*' else n1 / n2 if op == '/' else n1 % n2
-print(result)
+print(int(result))
 
 # ------TASK 5-------
 num = int(input('Enter a number: '))
