@@ -24,7 +24,7 @@ CREATE TABLE customers (
 
 INSERT INTO customers (firstname, lastname, phone, email)
 VALUES  ('Andrew', 'Smith', '123456789', 'andrew@smith.com'),
-		('Pamela', 'Banks', '098563816', 'pamela@banks.com'),
+	('Pamela', 'Banks', '098563816', 'pamela@banks.com'),
         ('Erika', 'Larsson', '1356738291', 'erika@larsson.com');
  
 /*Creating Products table*/
