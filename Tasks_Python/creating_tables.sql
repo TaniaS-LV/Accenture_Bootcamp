@@ -15,7 +15,7 @@ VALUES ('ABC Supplier', 'John Smith', '1234567890', 'john@abcsupplier.com'),
 
 /*Creating Customers table */
 CREATE TABLE customers (
-	customer_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(50) NOT NULL, 
     lastname VARCHAR(50) NOT NULL,
     phone VARCHAR(15),
@@ -46,7 +46,7 @@ VALUES ('Laptop', '15-inch laptop with Intel Core i5 processor', 899.99, 2, 1, '
 
 /*Creating Orders table*/
 CREATE TABLE orders (
-	order_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    order_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     status VARCHAR(50) NOT NULL,
     customer_id INT UNSIGNED, 
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
@@ -59,7 +59,7 @@ VALUES ('ENTERED', 123),
        
 /*Creating Ordered products table*/
 CREATE TABLE ordered_products (
-	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     order_id INT UNSIGNED,
     product_id INT UNSIGNED, 
     amount INT UNSIGNED,
